@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="character">
+            <div class="you">
+                <h2>you</h2>
+                <div class="progressBar">
+                    <div class="myBar" id="yourHealth">100</div>
+                </div>
+            </div>
+            <div class="enemy">
+                <h2>enemy</h2>
+                <div class="progressBar">
+                    <div class="myBar" id="enemyHealth">100</div>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <button id="start">start new game</button>
+            <div class="group-button">
+                <button id="attack" style="background:rgb(243, 56, 87) ;">attack</button>
+                <button id="special-attack" style="background: rgb(235, 159, 19);">special attack</button>
+                <button id="heal" style="background: rgb(150, 238, 123);">heal</button>
+                <button id="giveup" style="background: white;">give up</button>
+            </div>
+        </div>
+        <div class="content" id="content">
+            <ul class="status" id="status">
+                <!-- <li id="statusYou"></li>
+                <li id="statusMonster"></li> -->
+                <!-- <li id="active"></li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
